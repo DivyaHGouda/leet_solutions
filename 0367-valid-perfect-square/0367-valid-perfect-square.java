@@ -4,11 +4,9 @@ class Solution {
         long k=i;
         if(num==1)
         return true;
-        long res=0;
         while(i*i>num){
             k=i;
-            i=i/2;
-           
+            i=i/2;    
         }
         for(long j=i;j<=k;j++){
             if(j*j==num)
