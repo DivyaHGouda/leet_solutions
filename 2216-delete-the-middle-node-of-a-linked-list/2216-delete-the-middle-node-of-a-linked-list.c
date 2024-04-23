@@ -15,9 +15,6 @@ struct ListNode* deleteMiddle(struct ListNode* head) {
         n++;
     }
     int k=0;
-    if(n%2==0)
-    k=(n/2)+1;
-    else
     k=(n/2)+1;
     printf("%d",k);
     int j=1;
