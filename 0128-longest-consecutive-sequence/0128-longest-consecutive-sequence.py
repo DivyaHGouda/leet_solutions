@@ -10,10 +10,9 @@ class Solution(object):
         d=1
         nums.sort()
         for i in range(1,len(nums)):
-            if nums[i]!=nums[i-1]:
-                if nums[i]==nums[i-1]+1:
-                    c+=1
-                else:
-                    d=max(d,c)
-                    c=1
+            if nums[i]==nums[i-1]+1:
+                c+=1
+            elif nums[i]!=nums[i-1]:
+                d=max(d,c)
+                c=1
         return max(d,c)
