@@ -14,7 +14,7 @@ class Solution {
             }
         for(int i=j;i<nums.length-1;i++){
             
-            if(nums[i]!=nums[i+1]-1 && nums[i]-nums[i+1]!=0){
+            if(nums[i]!=nums[i+1]-1 && nums[i]!=nums[i+1]){
                 return nums[i]+1;
             }
             
