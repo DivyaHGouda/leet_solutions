@@ -21,7 +21,7 @@ int* nextLargerNodes(struct ListNode* head, int* returnSize) {
     int i=0;
     struct ListNode* temp1=NULL;
     while(temp!=NULL){
-        temp1=temp->next;
+        temp1=temp;
         while(temp1!=NULL){
             if(temp->val<temp1->val){
                 a[i]=temp1->val;
